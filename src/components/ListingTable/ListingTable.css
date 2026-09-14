@@ -1,0 +1,58 @@
+.listingTableWrap {
+  width: 99%;
+  color: #fff;
+}
+
+.listingTableCaption {
+  padding: 12px 8px;
+  background: #111a2e;
+  text-align: center;
+  font-weight: 600;
+}
+
+.listingTableScroll {
+  overflow-x: auto;
+}
+
+.listingTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: #111a2e;
+}
+
+.listingTable th,
+.listingTable td {
+  padding: 10px 8px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.listingTable th {
+  background: #111a2e;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.listingTable tbody tr {
+  cursor: pointer;
+}
+
+.listingTable tbody tr:hover {
+  background: #669999;
+}
+
+.listingTableSticky {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: #111a2e;
+}
+
+.listingTable tbody tr:hover .listingTableSticky {
+  background: #669999;
+}
