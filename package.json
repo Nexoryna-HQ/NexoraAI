@@ -1,0 +1,54 @@
+{
+  "name": "Nexora AI",
+  "version": "1.0.3",
+  "description": "Nexora AI",
+  "private": true,
+  "license": "MIT",
+  "author": "drop5",
+  "dependencies": {
+    "@metamask/detect-provider": "^1.2.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "cors": "^2.8.5",
+    "ethers": "^5.7.2",
+    "express": "^4.21.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.28.0",
+    "vite": "^5.4.11",
+    "axios": "^0.21.4",
+    "chalk": "^4.1.2",
+    "web3": "^1.6.0"
+  },
+  "scripts": {
+    "start": "node scripts/dev.js",
+    "postinstall": "npm run start",
+    "frontend": "vite",
+    "server": "node app/index.js",
+    "build": "vite build",
+    "preview": "vite preview",
+    "install:contracts": "npm install --prefix contracts",
+    "compile": "npm run compile --prefix contracts",
+    "test:contracts": "npm test --prefix contracts",
+    "deploy:local": "npm run deploy:local --prefix contracts",
+    "deploy:sepolia": "npm run deploy:sepolia --prefix contracts",
+    "deploy:mainnet": "npm run deploy:mainnet --prefix contracts",
+    "sync-abi": "node scripts/sync-abi.js",
+    "build:contracts": "npm run compile && node scripts/sync-abi.js"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=18.19.0",
+    "npm": ">=8.0.0"
+  }
+}
