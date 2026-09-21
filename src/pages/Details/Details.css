@@ -1,0 +1,326 @@
+/* ===== Details Page ===== */
+.detailsDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.detailsWrappedDiv {
+  width: 100%;
+}
+
+.detailsHeaderDiv {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 32px;
+  align-items: flex-start;
+}
+
+.headerLeftDiv {
+  flex: 1;
+  min-width: 0;
+}
+
+.firstHeaderDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.logo1Div {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logoLeftDiv {
+  flex-shrink: 0;
+}
+
+.logoLeftDiv img {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+}
+
+.logoMiddleDiv {
+  min-width: 0;
+}
+
+.nameDiv {
+  color: white;
+  margin-bottom: 2px;
+}
+
+.nameDiv span {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.symbolTierDiv {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.symbolTierDiv span {
+  font-size: 15px;
+  color: #94a3b8;
+}
+
+.symbolTierDiv img {
+  width: 20px;
+  height: 20px;
+}
+
+.logoRightDiv {
+  flex-shrink: 0;
+}
+
+.logoVoteDivWrapped {
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.logoVoteBtn {
+  padding: 12px 40px;
+  background: linear-gradient(135deg, #0ea5e9, #43b5e6);
+  border: none;
+  border-radius: 14px;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.logoVoteBtn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.secondHeaderDiv {
+  margin-top: 16px;
+  display: flex;
+  height: 48px;
+  border-radius: 14px;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.3), rgba(67, 181, 230, 0.3));
+}
+
+.secondHeaderWrappedDiv {
+  background: #1a2742;
+  width: 100%;
+  color: #94a3b8;
+  font-size: 14px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.secondHeaderWrappedDiv:hover {
+  color: white;
+}
+
+.secondHeaderWrappedDiv img {
+  width: 18px;
+  margin-right: 10px;
+}
+
+.thirdHeaderDiv {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.thirdHeaderDiv img {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.thirdHeaderDiv img:hover {
+  opacity: 1;
+}
+
+.addwatchlistbtn {
+  color: #43b5e6;
+  background: transparent;
+  border: 1px solid rgba(67, 181, 230, 0.3);
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: auto;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.addwatchlistbtn:hover {
+  background: rgba(67, 181, 230, 0.1);
+  border-color: #43b5e6;
+}
+
+.fourthHeaderDiv {
+  color: #94a3b8;
+  font-size: 14px;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fourthHeaderDiv .poocoinImg,
+.fourthHeaderDiv .dextoolImg {
+  cursor: pointer;
+  width: 22px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.fourthHeaderDiv .poocoinImg:hover,
+.fourthHeaderDiv .dextoolImg:hover {
+  opacity: 1;
+}
+
+.headerRightDiv {
+  flex: 0 0 400px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.detailsAdBanner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 32px 24px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.15) 0%, rgba(59, 130, 246, 0.15) 100%);
+  border: 1px solid rgba(139, 92, 246, 0.25);
+}
+
+.adBannerLogo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 12px rgba(139, 92, 246, 0.4));
+}
+
+.adBannerText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.adBannerTitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.adBannerSub {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.5px;
+}
+
+.mainDetailsDiv {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  margin-top: 32px;
+}
+
+.detailInfoWrapDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.flightImgDiv {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.flightImgDiv img {
+  width: 100%;
+}
+
+.loadingDetailsDiv {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingDetailsDiv img {
+  width: 120px;
+  height: 120px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1200px) {
+  .detailsHeaderDiv {
+    flex-direction: column;
+  }
+
+  .headerRightDiv {
+    flex: none;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .mainDetailsDiv {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .firstHeaderDiv {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 850px) {
+  .headerRightDiv {
+    display: none;
+  }
+
+  .flightImgDiv {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .nameDiv span {
+    font-size: 20px;
+  }
+
+  .logoVoteBtn {
+    padding: 10px 28px;
+    font-size: 14px;
+  }
+}
