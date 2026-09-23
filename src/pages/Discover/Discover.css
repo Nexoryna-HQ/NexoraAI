@@ -1,0 +1,225 @@
+.discoverPage {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.discoverHeader {
+  margin-bottom: 20px;
+}
+
+.discoverKicker {
+  margin: 0 0 8px;
+  color: #43b5e6;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.discoverTitle {
+  margin: 0 0 8px;
+  color: white;
+  font-size: 32px;
+  font-weight: 800;
+  background: linear-gradient(100deg, #f8fafc 0%, #7dd3fc 58%, #5eead4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.discoverLead {
+  margin: 0;
+  max-width: 640px;
+  color: #94a3b8;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.discoverForm {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.discoverInput {
+  flex: 1;
+  min-width: 0;
+  border: 1px solid rgba(67, 181, 230, 0.35);
+  border-radius: 14px;
+  background: #1a2742;
+  color: white;
+  font: inherit;
+  font-size: 15px;
+  padding: 14px 16px;
+}
+
+.discoverInput:focus {
+  outline: none;
+  border-color: #43b5e6;
+}
+
+.discoverSubmit {
+  border: none;
+  border-radius: 14px;
+  padding: 0 22px;
+  background: linear-gradient(135deg, #0ea5e9, #43b5e6);
+  color: white;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.discoverSubmit:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.discoverSuggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.discoverSuggestions button {
+  border: 1px solid rgba(67, 181, 230, 0.3);
+  border-radius: 999px;
+  background: transparent;
+  color: #cbd5e1;
+  font: inherit;
+  font-size: 13px;
+  padding: 8px 12px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.discoverSuggestions button:hover {
+  border-color: #43b5e6;
+  color: white;
+}
+
+.discoverStatus {
+  margin-top: 22px;
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.25), rgba(67, 181, 230, 0.25));
+}
+
+.discoverStatusInner,
+.discoverCard {
+  background: #111a2e;
+  border-radius: 20px;
+  padding: 18px;
+}
+
+.discoverStatusInner p,
+.discoverMethod,
+.discoverExplain,
+.discoverReason,
+.discoverMeta {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.discoverMethod {
+  color: #94a3b8;
+  margin-bottom: 8px;
+}
+
+.discoverDisclaimer {
+  margin: 12px 0 0;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.discoverResults {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.discoverCard h3 {
+  margin: 0 0 4px;
+  color: white;
+  font-size: 18px;
+}
+
+.discoverSymbol {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.discoverFacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  margin: 12px 0;
+}
+
+.discoverFacts span {
+  color: #cbd5e1;
+  font-size: 13px;
+}
+
+.discoverFacts strong {
+  display: block;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.discoverLink {
+  display: inline-block;
+  margin-top: 8px;
+  color: #43b5e6;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.discoverBone {
+  height: 14px;
+  margin-top: 10px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.05));
+  background-size: 200% 100%;
+  animation: discoverShimmer 1.4s ease-in-out infinite;
+}
+
+.discoverBoneTitle {
+  height: 22px;
+  width: 40%;
+}
+
+@keyframes discoverShimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .discoverTitle {
+    font-size: 26px;
+  }
+
+  .discoverForm {
+    flex-direction: column;
+  }
+
+  .discoverSubmit {
+    height: 46px;
+  }
+
+  .discoverResults {
+    grid-template-columns: 1fr;
+  }
+}
