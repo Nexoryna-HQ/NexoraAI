@@ -1,0 +1,263 @@
+.aiIntelDiv {
+  width: 100%;
+  margin-top: 28px;
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.25), rgba(67, 181, 230, 0.25));
+}
+
+.aiIntelWrapped {
+  background: #111a2e;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.aiIntelHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.aiIntelTitle {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.aiIntelTagline {
+  margin: 4px 0 0;
+  color: #94a3b8;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+
+.aiIntelMeta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.aiIntelBadge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.aiIntelBadgeHigh {
+  color: #86efac;
+  background: rgba(34, 197, 94, 0.15);
+}
+
+.aiIntelBadgePartial {
+  color: #fcd34d;
+  background: rgba(245, 158, 11, 0.15);
+}
+
+.aiIntelBadgeInsufficient {
+  color: #cbd5e1;
+  background: rgba(148, 163, 184, 0.15);
+}
+
+.aiIntelTime {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.aiIntelRefresh {
+  color: #43b5e6;
+  background: transparent;
+  border: 1px solid rgba(67, 181, 230, 0.35);
+  border-radius: 10px;
+  padding: 8px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  flex-shrink: 0;
+}
+
+.aiIntelRefresh:hover {
+  background: rgba(67, 181, 230, 0.1);
+  border-color: #43b5e6;
+}
+
+.aiIntelGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.aiIntelCard {
+  background: #1a2742;
+  border-radius: 14px;
+  padding: 16px;
+  min-width: 0;
+}
+
+.aiIntelCardWide {
+  grid-column: 1 / -1;
+}
+
+.aiIntelCardTitle {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+
+.aiIntelLabel {
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 10px 0 4px;
+}
+
+.aiIntelText {
+  color: #cbd5e1;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  word-break: break-word;
+}
+
+.aiIntelFacts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px 12px;
+  margin-bottom: 8px;
+}
+
+.aiIntelFact {
+  min-width: 0;
+}
+
+.aiIntelFact span {
+  display: block;
+  color: #64748b;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.aiIntelFact strong {
+  display: block;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 2px;
+  word-break: break-word;
+}
+
+.aiIntelSignals {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.aiIntelSignal {
+  border-radius: 10px;
+  padding: 8px 10px;
+  color: #cbd5e1;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.aiIntelSignalPositive {
+  background: rgba(34, 197, 94, 0.08);
+  border-left: 3px solid #22c55e;
+}
+
+.aiIntelSignalNeutral {
+  background: rgba(148, 163, 184, 0.08);
+  border-left: 3px solid #94a3b8;
+}
+
+.aiIntelSignalCaution {
+  background: rgba(245, 158, 11, 0.08);
+  border-left: 3px solid #f59e0b;
+}
+
+.aiIntelSignalKind {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.aiIntelEmpty {
+  color: #94a3b8;
+  font-size: 14px;
+  margin: 0;
+}
+
+.aiIntelDisclaimer {
+  margin: 16px 0 0;
+  color: #94a3b8;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.aiIntelSkeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.aiIntelBone {
+  height: 14px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.05));
+  background-size: 200% 100%;
+  animation: aiIntelShimmer 1.4s ease-in-out infinite;
+}
+
+.aiIntelBoneShort {
+  width: 42%;
+}
+
+.aiIntelBoneTitle {
+  height: 22px;
+  width: 36%;
+}
+
+@keyframes aiIntelShimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .aiIntelWrapped {
+    padding: 16px;
+  }
+
+  .aiIntelHeader {
+    flex-direction: column;
+  }
+
+  .aiIntelGrid,
+  .aiIntelFacts {
+    grid-template-columns: 1fr;
+  }
+
+  .aiIntelRefresh {
+    width: 100%;
+  }
+}
