@@ -1,0 +1,370 @@
+/* ===== Treasury Page ===== */
+.treasuryPage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ===== Header Section ===== */
+.treasuryHeaderSection {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 28px;
+}
+
+.treasuryTitle {
+  color: white;
+  font-size: 36px;
+  font-weight: 800;
+  margin: 0 0 12px 0;
+  background: linear-gradient(to right, #0ea5e9, #43b5e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.treasurySubtitle {
+  color: #a8a8b3;
+  font-size: 16px;
+  margin: 0;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+/* ===== Balance Card ===== */
+.treasuryBalanceCardWrapped {
+  width: 100%;
+  background-image: linear-gradient(to right, #14b8a6, #4eb4c3);
+  padding: 3px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 30px;
+  position: relative;
+  margin-top: 30px;
+}
+
+.treasuryBalanceCard {
+  width: 100%;
+  background-color: #111a2e;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 30px;
+  padding: 70px 40px 40px 40px;
+  box-sizing: border-box;
+}
+
+.treasuryBadgeWrapped {
+  position: absolute;
+  top: -22px;
+  left: 20px;
+  height: 50px;
+  width: 200px;
+  background-image: linear-gradient(to right, #ce3ca7, #4291ae);
+  border-radius: 20px;
+  padding: 2px;
+  z-index: 10;
+}
+
+.treasuryBadge {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #1a2742;
+}
+
+.treasuryBadge span {
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.treasuryBalanceContent {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.balanceMainRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.balanceUsdSection,
+.balanceNativeSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.balanceLabel {
+  color: #a8a8b3;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+.balanceValueUsd {
+  color: white;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.balanceValueNative {
+  color: #43b5e6;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.balanceDivider {
+  width: 2px;
+  height: 80px;
+  background: linear-gradient(to bottom, transparent, #ce3ca7, #4291ae, transparent);
+}
+
+.balancePulse {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+.treasuryAddressRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 20px;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.addressLabel {
+  color: #a8a8b3;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.addressValue {
+  color: #43b5e6;
+  font-size: 13px;
+  font-family: monospace;
+  word-break: break-all;
+}
+
+/* ===== Stats Row ===== */
+.treasuryStatsRow {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.statCardWrapped {
+  flex: 1;
+  max-width: 280px;
+  background-image: linear-gradient(to right, #14b8a6, #4eb4c3);
+  padding: 2px;
+  border-radius: 20px;
+}
+
+.statCard {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  background-color: #111a2e;
+  border-radius: 20px;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.statIcon {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+}
+
+.statInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.statLabel {
+  color: #a8a8b3;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.statValue {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* ===== Info Card (How It Works) ===== */
+.treasuryInfoCardWrapped {
+  width: 100%;
+  background-image: linear-gradient(to right, #14b8a6, #4eb4c3);
+  padding: 3px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 30px;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.treasuryInfoCard {
+  width: 100%;
+  background-color: #111a2e;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 30px;
+  padding: 70px 40px 40px 40px;
+  box-sizing: border-box;
+}
+
+.infoBadgePosition {
+  top: -22px;
+  left: 20px;
+}
+
+.infoGrid {
+  display: flex;
+  gap: 30px;
+}
+
+.infoItem {
+  flex: 1;
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.infoNumber {
+  font-size: 36px;
+  font-weight: 800;
+  background: linear-gradient(to bottom, #0ea5e9, #43b5e6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.infoText h3 {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+.infoText p {
+  color: #a8a8b3;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ===== Responsive ===== */
+@media only screen and (max-width: 900px) {
+  .balanceMainRow {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .balanceDivider {
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #ce3ca7, #4291ae, transparent);
+  }
+
+  .balanceValueUsd {
+    font-size: 36px;
+  }
+
+  .balanceValueNative {
+    font-size: 24px;
+  }
+
+  .treasuryStatsRow {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .statCardWrapped {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .infoGrid {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .treasuryBalanceCard,
+  .treasuryInfoCard {
+    padding: 60px 20px 30px 20px;
+  }
+
+  .treasuryAddressRow {
+    flex-direction: column;
+    text-align: center;
+    gap: 6px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .treasuryTitle {
+    font-size: 26px;
+  }
+
+  .treasurySubtitle {
+    font-size: 14px;
+  }
+
+  .balanceValueUsd {
+    font-size: 28px;
+  }
+
+  .balanceValueNative {
+    font-size: 20px;
+  }
+
+  .treasuryBadgeWrapped {
+    width: 160px;
+    height: 40px;
+  }
+
+  .treasuryBadge span {
+    font-size: 13px;
+  }
+
+  .infoNumber {
+    font-size: 28px;
+  }
+
+  .infoText h3 {
+    font-size: 14px;
+  }
+
+  .infoText p {
+    font-size: 13px;
+  }
+}
