@@ -1,0 +1,310 @@
+.intelPage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.intelPage a:focus-visible,
+.intelPage button:focus-visible,
+.intelPage input:focus-visible {
+  outline: 2px solid #43b5e6;
+  outline-offset: 2px;
+}
+
+.intelHero {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-end;
+  padding-bottom: 8px;
+}
+
+.intelKicker {
+  margin: 0 0 8px;
+  color: #43b5e6;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.intelTitle {
+  margin: 0;
+  color: white;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.1;
+  background: linear-gradient(100deg, #f8fafc 0%, #7dd3fc 58%, #5eead4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.intelLead {
+  max-width: 640px;
+  margin: 10px 0 0;
+  color: #94a3b8;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.intelSection {
+  border-radius: 20px;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(125, 211, 252, 0.28), rgba(94, 234, 212, 0.16));
+}
+
+.intelSectionInner {
+  background: #111a2e;
+  border-radius: 20px;
+  padding: 22px;
+}
+
+.intelSection h2 {
+  margin: 0;
+  color: white;
+  font-size: 20px;
+}
+
+.intelRule {
+  margin: 8px 0 16px;
+  color: #94a3b8;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.intelStats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.intelStat {
+  background: #1a2742;
+  border-radius: 14px;
+  padding: 14px;
+  min-width: 0;
+}
+
+.intelStatTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.intelStat h3 {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.intelStatValue {
+  margin: 10px 0 0;
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.intelStatNote {
+  margin: 8px 0 0;
+  color: #94a3b8;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.intelTag {
+  flex-shrink: 0;
+  border-radius: 999px;
+  padding: 2px 7px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.intelTagStored {
+  color: #cbd5e1;
+  background: rgba(148, 163, 184, 0.15);
+}
+
+.intelTagCalculated {
+  color: #fcd34d;
+  background: rgba(245, 158, 11, 0.15);
+}
+
+.intelTagQuote {
+  color: #86efac;
+  background: rgba(34, 197, 94, 0.15);
+}
+
+.intelCards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.intelCard {
+  background: #1a2742;
+  border-radius: 14px;
+  padding: 14px;
+  min-width: 0;
+}
+
+.intelCard h3 {
+  margin: 0;
+  color: white;
+  font-size: 16px;
+  word-break: break-word;
+}
+
+.intelMeta {
+  margin-top: 4px;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.intelFacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  margin: 12px 0;
+}
+
+.intelFacts span {
+  color: #e2e8f0;
+  font-size: 13px;
+}
+
+.intelFacts strong {
+  display: block;
+  color: #64748b;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.intelDetail,
+.intelEmpty,
+.intelCount,
+.intelAlert {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.intelCount {
+  margin-bottom: 12px;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.intelLink {
+  display: inline-block;
+  margin-top: 10px;
+  color: #43b5e6;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.intelSearch {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.intelSearch label {
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.intelSearch input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(67, 181, 230, 0.35);
+  border-radius: 14px;
+  background: #1a2742;
+  color: white;
+  font: inherit;
+  font-size: 15px;
+  padding: 14px 16px;
+}
+
+.intelResults {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.intelResult {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #1a2742;
+  color: white;
+  text-decoration: none;
+}
+
+.intelResult small {
+  color: #94a3b8;
+}
+
+.intelBone {
+  height: 72px;
+  border-radius: 14px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.04));
+  background-size: 200% 100%;
+  animation: intelShimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes intelShimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
+
+@media (max-width: 1000px) {
+  .intelStats,
+  .intelCards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .intelHero {
+    align-items: flex-start;
+  }
+
+  .intelTitle {
+    font-size: 30px;
+  }
+
+  .intelStats,
+  .intelCards {
+    grid-template-columns: 1fr;
+  }
+
+  .intelSectionInner {
+    padding: 16px;
+  }
+
+  .intelResult {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
