@@ -1,0 +1,57 @@
+@import "./site.css";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --nx-bg: #07090e;
+  --nx-bg-raised: #10141c;
+  --nx-line: rgba(255, 255, 255, 0.08);
+  --nx-text: #f4f7fb;
+  --nx-muted: #9aa6b8;
+  --nx-accent: #22d3ee;
+  --nx-accent-2: #4ade80;
+  --nx-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--nx-bg);
+  color: var(--nx-text);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.5);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
