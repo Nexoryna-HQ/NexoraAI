@@ -1,0 +1,4 @@
+npm WARN config optional Use `--omit=optional` to exclude optional dependencies, or
+npm WARN config `--include=optional` to include them.
+npm WARN config 
+npm WARN config       Default value does install optional deps unless otherwise omitted.
