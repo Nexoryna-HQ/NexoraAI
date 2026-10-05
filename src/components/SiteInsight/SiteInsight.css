@@ -1,0 +1,157 @@
+.siteInsight {
+  margin-top: 64px;
+  padding-top: 36px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.insightHeading {
+  margin: 0;
+  color: #f7fafc;
+  font-size: clamp(32px, 4vw, 42px);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+}
+
+.siteNote {
+  max-width: 640px;
+  margin: 12px 0 0;
+  color: #8b97a8;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.insightLayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 22px;
+}
+
+.insightChart h3 {
+  margin: 0 0 6px;
+  color: #f7fafc;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.insightChart > p {
+  margin: 0 0 18px;
+  color: #8b97a8;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.insightBars {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.insightBar {
+  display: grid;
+  grid-template-columns: minmax(120px, 168px) minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+}
+
+.insightBar span,
+.insightBar strong {
+  color: #d7e0ea;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.insightBar strong {
+  text-align: right;
+  color: #f7fafc;
+}
+
+.insightTrack {
+  height: 8px;
+  border-radius: 99px;
+  background: rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+
+.insightFill {
+  display: block;
+  height: 100%;
+  border-radius: 99px;
+  background: #22d3ee;
+}
+
+.insightFill-emerald { background: #4ade80; }
+.insightFill-ruby { background: #fb7185; }
+.insightFill-diamond { background: #22d3ee; }
+
+.insightFigures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px 40px;
+  margin-top: 28px;
+}
+
+.insightFigures strong {
+  display: block;
+  color: #f7fafc;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.insightFigures span {
+  color: #8b97a8;
+  font-size: 13px;
+}
+
+.insightStatus {
+  margin: 18px 0 0;
+  color: #9aa6b8;
+  font-size: 15px;
+}
+
+.siteChat {
+  margin-top: 36px;
+  padding: 22px 22px 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  background: rgba(14, 18, 26, 0.92);
+}
+
+.siteChat h3 {
+  margin: 0;
+  color: #f7fafc;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
+.siteChat > p {
+  max-width: 560px;
+  margin: 8px 0 0;
+  color: #9aa6b8;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.siteChat .discoverSubmit {
+  background: #22d3ee;
+  color: #041018;
+}
+
+.siteChat .discoverInput {
+  background: rgba(7, 9, 14, 0.8);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 800px) {
+  .insightLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .insightBar {
+    grid-template-columns: minmax(96px, 1fr) minmax(0, 1.4fr) auto;
+  }
+}
