@@ -1,0 +1,49 @@
+/* ===== Main Page Wrapper ===== */
+.mainPage {
+  width: 100%;
+  min-height: 100vh;
+  background: #07090e;
+}
+
+.mainPage::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(560px 320px at 92% 0%, rgba(34, 211, 238, 0.12), transparent 68%),
+    radial-gradient(480px 280px at 0% 100%, rgba(16, 185, 129, 0.08), transparent 70%),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 119px,
+      rgba(255, 255, 255, 0.035) 120px
+    );
+  z-index: 0;
+}
+
+.mainDiv,
+.siteFooter {
+  position: relative;
+  z-index: 1;
+}
+
+.mainDiv {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 108px 32px 72px;
+}
+
+.routeFallback {
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c9d4e8;
+}
+
+@media (max-width: 768px) {
+  .mainDiv {
+    padding: 80px 16px 40px;
+  }
+}
