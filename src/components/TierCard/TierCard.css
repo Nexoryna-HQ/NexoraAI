@@ -1,0 +1,97 @@
+/* ===== Tier Card ===== */
+.tierCardOuter {
+  flex: 1;
+  max-width: 360px;
+  width: 100%;
+  border-radius: 24px;
+  padding: 2px;
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.3), rgba(67, 181, 230, 0.3));
+  position: relative;
+}
+
+.tierCardInner {
+  background: #111a2e;
+  border-radius: 24px;
+  padding: 36px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  min-height: 520px;
+  position: relative;
+}
+
+.tierGemIcon {
+  position: absolute;
+  top: -18px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+}
+
+.tierCardHead {
+  margin-bottom: 24px;
+}
+
+.tierCardHead h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+}
+
+.tierCardPrice {
+  font-size: 28px;
+  font-weight: 800;
+  color: white;
+  margin-top: 8px;
+}
+
+.tierCardFeatures {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.tierFeatureRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.tierFeatureRow img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.tierFeatureRow span {
+  color: #94a3b8;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.tierBuyBtn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(135deg, #0ea5e9, #43b5e6);
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.tierBuyBtn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 1050px) {
+  .tierCardOuter {
+    max-width: 420px;
+  }
+}
