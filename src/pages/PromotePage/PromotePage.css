@@ -1,0 +1,110 @@
+/* ===== Promote Page ===== */
+.promPage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 60px;
+}
+
+.promHeader {
+  width: 100%;
+  text-align: left;
+}
+
+.promGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.promCardOuter {
+  border-radius: 20px;
+  padding: 2px;
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.25), rgba(67, 181, 230, 0.25));
+}
+
+.promCard {
+  background: #111a2e;
+  border-radius: 20px;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.promCardTop h3 {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+}
+
+.promCardLocation {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.promCardPrices {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.promPriceRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.10);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.promDuration {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.promPrice {
+  color: #43b5e6;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.promCardSpecs {
+  color: #475569;
+  font-size: 12px;
+  text-align: center;
+}
+
+.promBuyBtn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #0ea5e9, #43b5e6);
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+
+.promBuyBtn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 700px) {
+  .promGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .promHeader h1 {
+    font-size: 26px;
+  }
+}
