@@ -1,0 +1,62 @@
+.confirmDialogBackdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(3, 8, 18, 0.72);
+}
+
+.confirmDialogPanel {
+  width: min(420px, 100%);
+  padding: 20px;
+  border-radius: 12px;
+  background: #0b1220;
+  color: #fff;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+}
+
+.confirmDialogPanelWide {
+  width: min(760px, 100%);
+  max-height: min(90vh, 900px);
+  overflow: auto;
+  position: relative;
+}
+
+.confirmDialogPanel h2 {
+  margin: 0 0 16px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.confirmDialogActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.confirmDialogActions button,
+.confirmDialogClose {
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 14px;
+  background: #1d4f7c;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+}
+
+.confirmDialogActions button:last-child {
+  background: #2a3548;
+}
+
+.confirmDialogClose {
+  position: sticky;
+  top: 0;
+  float: right;
+  margin-bottom: 8px;
+  background: #2a3548;
+}
