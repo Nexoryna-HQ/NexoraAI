@@ -1,0 +1,34 @@
+/* ===== Tiers Page ===== */
+.tiersPage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 60px;
+}
+
+.tiersHeader {
+  width: 100%;
+  text-align: left;
+}
+
+.tiersGrid {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  justify-content: center;
+}
+
+@media (max-width: 1050px) {
+  .tiersGrid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .tiersHeader h1 {
+    font-size: 26px;
+  }
+}
